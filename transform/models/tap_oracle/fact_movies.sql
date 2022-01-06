@@ -1,0 +1,10 @@
+{{
+  config(
+    materialized='table'
+  )
+}}
+
+SELECT DISTINCT r.USERID, r.MOVIEID, m.IMDB_ID, m.ORIGINAL_TITLE, m.RELEASE_DATE, r.RATING, m.VOTE_AVERAGE, m.VOTE_COUNT FROM RATINGS_SMALL r 
+INNER JOIN MOVIES_METADATA m
+ON r.MOVIEID = m.ID
+order by movieid, userid
