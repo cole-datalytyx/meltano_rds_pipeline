@@ -27,6 +27,7 @@ plugins:
     config:
       host: postgres-db.cauam24mhfkz.eu-west-2.rds.amazonaws.com
       user: postgres
+      password: postgres1234
       dbname: movies_db
       default_target_schema: public
       primary_key_required: false
