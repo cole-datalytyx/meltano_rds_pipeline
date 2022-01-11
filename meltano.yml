@@ -6,7 +6,7 @@ plugins:
   - name: tap-oracle
     namespace: tap_oracle
     variant: transferwise
-    pip_url: pipelinewise-tap-oracle
+    pip_url: git+https://github.com/transferwise/pipelinewise-tap-oracle.git
     executable: tap-oracle
     capabilities:
     - discover
