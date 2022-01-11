@@ -5,11 +5,12 @@ plugins:
   extractors:
   - name: tap-oracle
     namespace: tap_oracle
-    pip_url: tap-oracle
+    variant: transferwise
+    pip_url: pipelinewise-tap-oracle
     executable: tap-oracle
     capabilities:
-    - catalog
     - discover
+    - catalog
     config:
       host: oracle-db.cauam24mhfkz.eu-west-2.rds.amazonaws.com
       port: 1521
